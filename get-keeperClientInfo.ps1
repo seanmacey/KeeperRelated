@@ -30,7 +30,7 @@ function get-keeperClient {
     )
     
     begin {
-        $jsonin = (get-content $keeperjson | out-string | convertfrom-Json).shared_folders
+        $jsonin = (get-content $keeperjson | out-string | convertfrom-Json).records
 
     }
     
